@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__up">
+      <div class="header__up-logo">
+        <a href="#"><img src="./images/logo.svg" alt="icon logo"></a>
+      </div>
+      <nav class="header__menu">
+        <ul class="header__item epilogue-medium">
+          <li class="header__list">
+            <a class="header__link" href="#">Features
+              <picture>
+                <img class="icon-down" src="./images/icon-arrow-down.svg" alt="icon arrow down">
+                <img class="icon-up" src="./images/icon-arrow-up.svg" alt="icon arrow up">
+              </picture>
+            </a>
+            <ul class="header__submenu">
+              <li>
+                <img src="./images/icon-todo.svg" alt="icon todo">
+                <a href="#">Todo List</a>
+              </li>
+              <li>
+                <img src="./images/icon-calendar.svg" alt="icon calendar">
+                <a href="#">Calendar</a>
+              </li>
+              <li>
+                <img src="./images/icon-reminders.svg" alt="icon reminders">
+                <a href="#">Reminders</a>
+              </li>
+              <li>
+                <img src="./images/icon-planning.svg" alt="icon planning">
+                <a href="#">Planning</a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__list">
+            <a class="header__link" href="#">Company
+              <picture>
+                <img class="icon-down" src="./images/icon-arrow-down.svg" alt="icon arrow down">
+                <img class="icon-up" src="./images/icon-arrow-up.svg" alt="icon arrow up">
+              </picture>
+            </a>
+            <ul class="header__submenu header__submenu-icons">
+              <li><a href="#">History</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </li>
+          <li class="header__list">
+            <a class="header__link" href="#">Careers</a>
+          </li>
+          <li class="header__list">
+            <a class="header__link" href="#">About</a>
+          </li>
+        </ul>
+        <div class="header__btn">
+          <a href="#" class="header__btn-login epilogue-medium">Login</a>
+          <button class="header__btn-reg epilogue-medium">Register</button>
+        </div>
+      </nav>
+      <div class="header__up-menu">
+        <img src="./images/icon-menu.svg" alt="icon menu">
+      </div>
+      <div class="header__up-close">
+        <img src="./images/icon-close-menu.svg" alt="icon close menu">
+      </div>
+      <div class="backdrop"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="main__images">
+      <picture>        
+        <source srcset= "./images/image-hero-desktop.png" alt="image hero desktop" media="(min-width:1044px)">
+        <img src="./images/image-hero-mobile.png" alt="image hero mobile">
+      </picture>
+    </div>
+    <div class="main__content">
+      <h1 class="main__content-title epilogue-bold">Make remote work</h1>
+      <p class="main__contnet-text epilogue-medium">Get your team in sync, no matter your location. Streamline processes,
+        create team rituals, and watch productivity soar.</p>
+      <button class="main__content-btn epilogue-medium">Learn more</button>
+        <div class="main__content-imges">
+          <img src="./images/client-databiz.svg" alt="client databiz">
+          <img src="./images/client-audiophile.svg" alt="client audiphile">
+          <img src="./images/client-meet.svg" alt="client meet">
+          <img src="./images/client-maker.svg" alt="client marker">
+        </div>
+    </div>
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Sasha Yerokhov</a>.
+  </div>
+  <script src="app.js" defer></script>
+</body>
+
+</html>
